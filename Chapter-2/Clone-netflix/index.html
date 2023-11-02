@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Indonesia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Volkhov:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/netflix-title.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/icons/logos_netflix.svg"
+              class="img-fluid"
+              alt="Logo Netflix"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-title">
+              <li class="nav-item">
+                <a class="nav-link me-2 active" aria-current="page" href="#"
+                  >Movies</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link me-2 active" href="#">TV Shows</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="#">New & Popular</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-flex">
+            <div class="dropdown-center">
+              <button
+                class="btn btn-dark dropdown-toggle me-2 text-title"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ID
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Indonesia</a></li>
+              </ul>
+            </div>
+            <button class="btn btn-danger">Masuk</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="hero-content">
+                <h1 class="hero-title">
+                  Nikmati Tontonan Dimana Saja, dan Kapan Saja
+                </h1>
+                <p class="text-content mb-4">
+                  Tonton apa saja secara online dari komputer pribadi atau di
+                  perangkat yang terhubung ke Internet dan mendukung aplikasi
+                  Netflix, dan gunakan download untuk menonton saat kamu di
+                  perjalanan dan tidak punya koneksi Internet.
+                </p>
+                <button class="btn btn-danger">Daftar Sekarang</button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <img
+                  src="./assets/images/Img-hero.png"
+                  alt="Image Hero"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="service">
+        <div class="container">
+          <h2 class="content-title content-center">
+            Layanan Terbaik yang Tidak Mengecewakan
+          </h2>
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card card-basic">
+                <div class="card-body">
+                  <img
+                    src="./assets/icons/fluent_tv.svg"
+                    class="img-fluid"
+                    alt="TV"
+                  />
+                  <h5 class="card-title">Tonton langsung di TV</h5>
+                  <p class="card-text-small">
+                    Tonton di Smart TV, Playstation, Xbox, Chromecast, Apple TV,
+                    pemutar Blu-ray, dan banyak lagi
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card card-basic">
+                <div class="card-body">
+                  <img
+                    src="./assets/icons/fluent_phone.svg"
+                    class="img-fluid"
+                    alt="TV"
+                  />
+                  <h5 class="card-title">Download untuk offline</h5>
+                  <p class="card-text-small">
+                    Simpan dengan mudah agar selalu ada acara TV dan film yang
+                    bisa ditonton
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card card-basic">
+                <div class="card-body">
+                  <img
+                    src="./assets/icons/share-computer.svg"
+                    class="img-fluid"
+                    alt="TV"
+                  />
+                  <h5 class="card-title">Akses berbagai perangkat</h5>
+                  <p class="card-text-small">
+                    Streaming film dan acara TV tak terbatas di ponsel, tablet,
+                    laptop, dan TV-mu
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card card-basic">
+                <div class="card-body">
+                  <img
+                    src="./assets/icons/cil_child.svg"
+                    class="img-fluid"
+                    alt="TV"
+                  />
+                  <h5 class="card-title">Buat profil untuk anak</h5>
+                  <p class="card-text-small">
+                    Profil anak dilengkapi kontrol orang tua yang dilindungi PIN
+                    sehingga kamu bisa membatasi rating usia konten yang bisa
+                    ditonton anak
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="preview">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div>
+                <img
+                  src="./assets/images/pexels-karolina.png"
+                  alt="Image Preview"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-md-5 offset-md-1">
+              <h2 class="content-title">
+                Tonton Film, Acara TV Tak Terbatas, dan Lebih Banyak Lagi
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="new-popular">
+        <div class="container">
+          <h2 class="content-title content-left">
+            Film dan Acara TV Populer Bulan Ini
+          </h2>
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card card-basic border-secondary">
+                <div class="card-body">
+                  <img
+                    src="./assets/images/peaky-blinders.png"
+                    class="img-fluid mb-0"
+                    alt="Peaky Blinders"
+                  />
+                  <div class="card-content">
+                    <h5 class="card-title mb-1">Peaky Blinders</h5>
+                    <p class="card-text mb-1">Crime, Drama</p>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./assets/icons/start-icon.svg"
+                        class="m-0 pe-2"
+                        alt="Start"
+                      />
+                      <span class="card-text-small">8.8/10 IMDb</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card card-basic border-secondary">
+                <div class="card-body">
+                  <img
+                    src="./assets/images/spider-man.png"
+                    class="img-fluid mb-0"
+                    alt="Spider-Man: No Way Home"
+                  />
+                  <div class="card-content">
+                    <h5 class="card-title mb-1">Spider-Man: No Way Home</h5>
+                    <p class="card-text mb-1">Action, Adventure, Fantasy</p>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./assets/icons/start-icon.svg"
+                        class="m-0 pe-2"
+                        alt="Start"
+                      />
+                      <span class="card-text-small">8.8/10 IMDb</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card card-basic border-secondary">
+                <div class="card-body">
+                  <img
+                    src="./assets/images/arcane.png"
+                    class="img-fluid mb-0"
+                    alt="Arcane: League of Legends"
+                  />
+                  <div class="card-content">
+                    <h5 class="card-title mb-1">Arcane: League of Legends</h5>
+                    <p class="card-text mb-1">Animation, Action, Adventure</p>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./assets/icons/start-icon.svg"
+                        class="m-0 pe-2"
+                        alt="Start"
+                      />
+                      <span class="card-text-small">9.2/10 IMDb</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card card-basic border-secondary">
+                <div class="card-body">
+                  <img
+                    src="./assets/images/joker.png"
+                    class="img-fluid mb-0"
+                    alt="Joker"
+                  />
+                  <div class="card-content">
+                    <h5 class="card-title mb-1">Joker</h5>
+                    <p class="card-text mb-1">Crime, Drama, Thriller</p>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./assets/icons/start-icon.svg"
+                        class="m-0 pe-2"
+                        alt="Start"
+                      />
+                      <span class="card-text-small">8.4/10 IMDb</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="package">
+        <div class="container">
+          <h2 class="content-title content-center">
+            Pilih Paket yang Cocok Untukmu
+          </h2>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card card-basic card-package">
+                <div class="card-body">
+                  <div class="text-center pb-4">
+                    <h5 class="card-title title-package">Basic</h5>
+                    <p class="package-price">
+                      Rp 120,000<span class="package-month">/bulan</span>
+                    </p>
+                  </div>
+                  <div>
+                    <ul class="ps-0">
+                      <li class="check-icon">Ponsel, Tablet, Komputer, TV</li>
+                      <li class="check-icon">No Ads</li>
+                      <li class="check-icon">Batalkan Kapan Saja</li>
+                      <li class="check-icon">Kualitas Video Baik</li>
+                      <li class="check-icon">Resolusi 480p</li>
+                      <li class="no-active">Resolusi 720p</li>
+                      <li class="no-active">Resolusi 1080p</li>
+                      <li class="no-active">Resolusi 4K+HDR</li>
+                    </ul>
+
+                    <div class="text-center pt-4">
+                      <button class="btn btn-dark border-secondary">
+                        Pilih Paket
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-basic card-package border-secondary">
+                <div class="card-body">
+                  <div class="text-center pb-4">
+                    <h5 class="card-title title-package">Standart</h5>
+                    <p class="package-price">
+                      Rp 153,000<span class="package-month">/bulan</span>
+                    </p>
+                  </div>
+                  <div>
+                    <ul class="ps-0">
+                      <li class="check-icon">Ponsel, Tablet, Komputer, TV</li>
+                      <li class="check-icon">No Ads</li>
+                      <li class="check-icon">Batalkan Kapan Saja</li>
+                      <li class="check-icon">Kualitas Video Baik</li>
+                      <li class="check-icon">Resolusi 480p</li>
+                      <li class="check-icon">Resolusi 720p</li>
+                      <li class="check-icon">Resolusi 1080p</li>
+                      <li class="no-active">Resolusi 4K+HDR</li>
+                    </ul>
+
+                    <div class="text-center pt-4">
+                      <button class="btn btn-danger">Pilih Paket</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-basic card-package">
+                <div class="card-body">
+                  <div class="text-center pb-4">
+                    <h5 class="card-title title-package">Premium</h5>
+                    <p class="package-price">
+                      Rp 186,000<span class="package-month">/bulan</span>
+                    </p>
+                  </div>
+                  <div>
+                    <ul class="ps-0">
+                      <li class="check-icon">Ponsel, Tablet, Komputer, TV</li>
+                      <li class="check-icon">No Ads</li>
+                      <li class="check-icon">Batalkan Kapan Saja</li>
+                      <li class="check-icon">Kualitas Video Baik</li>
+                      <li class="check-icon">Resolusi 480p</li>
+                      <li class="check-icon">Resolusi 720p</li>
+                      <li class="check-icon">Resolusi 1080p</li>
+                      <li class="check-icon">Resolusi 4K+HDR</li>
+                    </ul>
+
+                    <div class="text-center pt-4">
+                      <button class="btn btn-dark border-secondary">
+                        Pilih Paket
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="subscribe">
+        <div class="container">
+          <div class="subscribe-content">
+            <h5 class="text-black">
+              Berlangganan Untuk Mendapatkan Informasi Terbaru dan Menjadi
+              Anggota Kami
+            </h5>
+
+            <form class="d-flex">
+              <input
+                type="text"
+                class="form-control me-4"
+                placeholder="Enter Your Email"
+              />
+              <button class="btn btn-danger">Berlangganan</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div>
+              <img src="./assets/icons/logos_netflix.svg" alt="Netflix" />
+              <p>Layanan streaming tanpa iklan dan harga bulanan yang murah</p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div>
+              <h6>Perusahaan</h6>
+
+              <ul class="p-0">
+                <li>Tentang Kami</li>
+                <li>Hubungi Kami</li>
+                <li>Karir</li>
+                <li>Blog</li>
+                <li>Investors Relations</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div>
+              <h6>Dapatkan Bantuan</h6>
+
+              <ul class="p-0">
+                <li>FAQ</li>
+                <li>Pusat Bantuan</li>
+                <li>Akun</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div>
+              <h6>Lainnya</h6>
+
+              <ul class="p-0">
+                <li>Tukar Kartu Hadiah</li>
+                <li>Netflix Originals</li>
+                <li>Media Center</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <h6>Dapatkan Aplikasi Kami</h6>
+              <div>
+                <img
+                  src="./assets/icons/app-store.svg"
+                  alt="App Store"
+                  class="img-fluid"
+                />
+                <img
+                  src="./assets/icons/google-play.svg"
+                  alt="Google Play"
+                  class="img-fluid"
+                />
+              </div>
+
+              <div class="mt-3">
+                <img
+                  src="./assets/icons/facebook.svg"
+                  alt="Facebook"
+                  class="img-fluid"
+                />
+                <img
+                  src="./assets/icons/instagram.svg"
+                  alt="Instagram"
+                  class="img-fluid"
+                />
+                <img
+                  src="./assets/icons/twitter.svg"
+                  alt="Twitter"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <div>
+            <span
+              >&copy; 2023 Hak Cipta Terpelihara oleh Netflix Indonesia</span
+            >
+          </div>
+          <div>
+            <span class="me-3">Persyaratan Layanan</span>
+            <span>Kebijakan Privasi</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
