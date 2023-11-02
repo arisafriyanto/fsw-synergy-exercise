@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.product-list {
+  margin: 3.125rem 0 6.25rem;
+}
+
+.shopping-cart {
+  margin-bottom: 5rem;
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+  border: none;
+}
+
+.cart-item {
+  padding: 7.25rem 0 !important;
+}
+
+.image-cart {
+  width: 5rem;
+  border-radius: 0.5rem;
+}

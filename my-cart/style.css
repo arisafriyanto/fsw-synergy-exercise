@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.app-container {
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.app-container > form > .form-control {
+  width: 100%;
+}
+.app-container > form > .form-control > label {
+  display: block;
+}
+.form-control input {
+  display: block;
+  width: 100%;
+}

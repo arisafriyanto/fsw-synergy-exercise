@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyCart</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div id="app" class="app-container border border-[#eee] px-8 py-10">
+    <h1 class="text-3xl font-bold text-sky-800">MyCart</h1>
+    <form id="form-cart" class="mt-8 flex flex-col gap-4">
+      <div class="form-control">
+        <label for="itemName" class="font-semibold text-base mb-2">Item Name</label>
+        <input id="itemName" name="itemName" placeholder="Type product item name"
+          class="px-5 py-4 rounded-lg text-sm border border-[#ddd] focus:border-sky-600 transition-all duration-300 outline-none" />
+      </div>
+      <div class="form-control">
+        <label for="price" class="font-semibold text-base mb-2">Price</label>
+        <input id="price" type="number" name="price" placeholder="Type product product price"
+          class="px-5 py-4 rounded-lg text-sm border border-[#ddd] focus:border-sky-600 transition-all duration-300 outline-none" />
+      </div>
+      <div class="form-control">
+        <label for="qty" class="font-semibold text-base mb-2">Qty</label>
+        <input id="qty" type="number" name="qty" placeholder="type qty for this item"
+          class="px-5 py-4 rounded-lg text-sm border border-[#ddd] focus:border-sky-600 transition-all duration-300 outline-none" />
+      </div>
+      <div class="w-full">
+        <button type="submit" class="float-right py-4 px-6 rounded-lg bg-sky-800 text-white text-sm">
+          Submit
+        </button>
+      </div>
+    </form>
+    <div class="mt-14 p-5 shadow-lg flex flex-col gap-3">
+      <div>
+        <h3 class="font-medium text-base">Product</h3>
+        <div id="product-text" class="text-base mt-2 font-poppins text-sm font-semibold">
+          -
+        </div>
+      </div>
+      <div>
+        <h3 class="font-medium text-base">Subtotal</h3>
+        <div id="subtotal-text" class="text-base mt-2 font-poppins text-sm font-semibold">
+          -
+        </div>
+      </div>
+      <div>
+        <h3 class="font-medium text-base">Discount</h3>
+        <div id="discount-text" class="text-base mt-2 font-poppins text-sm font-semibold text-green-700">
+          10%
+        </div>
+      </div>
+      <div>
+        <h3 class="font-medium text-base">Shipping fee</h3>
+        <div id="shipping-fee-text" class="text-base mt-2 font-poppins text-sm font-semibold text-red-500">
+          3000
+        </div>
+      </div>
+      <div>
+        <h2 class="font-medium text-base">Total</h2>
+        <div id="total-text" class="text-base mt-2 font-poppins text-sm font-semibold">
+          -
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js" class="text-base mt-2 font-poppins text-sm font-semibold"></script>
+</body>
+
+</html>

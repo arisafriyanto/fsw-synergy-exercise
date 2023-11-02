@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="product-list">
+        <div class="container">
+          <h1 class="mb-5 text-center">Products</h1>
+          <div id="product-list">
+            <div class="row">
+              <div class="col-md-3">
+                <!-- Product 1 -->
+                <div class="product">
+                  <div class="card">
+                    <img src="https://picsum.photos/200" alt="Product 1" />
+                    <div class="card-body">
+                      <h5 class="card-title mb-1 fw-semibold">Product 1</h5>
+                      <p class="card-text text-secondary fw-semibold pb-2">Rp. 10.000</p>
+
+                      <button
+                        class="add-to-cart btn btn-primary rounded-3"
+                        data-name="Product 1"
+                        data-price="10000"
+                      >
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <!-- Product 2 -->
+                <div class="product">
+                  <div class="card">
+                    <img src="https://picsum.photos/200" alt="Product 2" />
+                    <div class="card-body">
+                      <h5 class="card-title mb-1 fw-semibold">Product 2</h5>
+                      <p class="card-text text-secondary fw-semibold pb-2">Rp. 15.000</p>
+
+                      <button
+                        class="add-to-cart btn btn-primary rounded-3"
+                        data-name="Product 2"
+                        data-price="15000"
+                      >
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <!-- Product 3 -->
+                <div class="product">
+                  <div class="card">
+                    <img src="https://picsum.photos/200" alt="Product 3" />
+                    <div class="card-body">
+                      <h5 class="card-title mb-1 fw-semibold">Product 3</h5>
+                      <p class="card-text text-secondary fw-semibold pb-2">Rp. 22.000</p>
+
+                      <button
+                        class="add-to-cart btn btn-primary rounded-3"
+                        data-name="Product 3"
+                        data-price="22000"
+                      >
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <!-- Product 4 -->
+                <div class="product">
+                  <div class="card">
+                    <img src="https://picsum.photos/200" alt="Product 4" />
+                    <div class="card-body">
+                      <h5 class="card-title mb-1 fw-semibold">Product 4</h5>
+                      <p class="card-text text-secondary fw-semibold pb-2">Rp. 20.000</p>
+
+                      <button
+                        class="add-to-cart btn btn-primary rounded-3"
+                        data-name="Product 4"
+                        data-price="20000"
+                      >
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add more products here -->
+          </div>
+        </div>
+      </section>
+
+      <section class="shopping-cart">
+        <div class="container">
+          <h1 class="mb-5 text-center">Shopping Cart</h1>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-body">
+                  <h2>Your Cart</h2>
+                  <div id="cart">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Picture</th>
+                          <th>Product</th>
+                          <th>Price</th>
+                          <th class="text-center">Quantity</th>
+                        </tr>
+                      </thead>
+                      <tbody id="table-cart-list" class="align-middle">
+                        <tr>
+                          <td colspan="4" class="text-center cart-item">
+                            <span class="rounded-5 px-2 py-1 text-bg-primary">Cart is empty</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="pb-3">
+                    <h5>Total</h5>
+                    <p id="cart-subtotal" class="fw-semibold">Sub Total: Rp. 0</p>
+                  </div>
+
+                  <div class="pb-4">
+                    <h5>Promo Code</h5>
+                    <div>
+                      <input type="text" name="promo-code" class="form-control" id="promo-code" />
+                      <div id="discount" class="pt-1 ps-1">-</div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h5>Total</h5>
+                    <p id="cart-total" class="fw-bolder text-success">Total: Rp. 0</p>
+                  </div>
+
+                  <div class="pt-4 pb-3">
+                    <button class="btn btn-primary" style="width: 100%">Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

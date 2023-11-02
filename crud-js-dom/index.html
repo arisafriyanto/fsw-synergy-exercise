@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn DOM</title>
+    <style>
+      body {
+        background-color: #34a6b7;
+      }
+
+      ul li {
+        margin-bottom: 1rem;
+      }
+
+      .mr-16 {
+        margin-right: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div>
+          <h1>My Tasks</h1>
+          <form id="formInputTask">
+            <div style="margin-bottom: 20px">
+              <label for="task">Task Name</label>
+              <input type="text" id="task" autofocus />
+            </div>
+
+            <button type="submit">Add Task</button>
+          </form>
+        </div>
+
+        <div>
+          <ul id="taskList"></ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
